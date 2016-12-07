@@ -1,0 +1,48 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <SurfaceView
+        android:id="@+id/capture_preview_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center" />
+
+    <google.zxing.sacn.resource.ViewfinderView
+        android:id="@+id/capture_viewfinder_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:background="@android:color/transparent" />
+
+    <include layout="@layout/layout_title"></include>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="95dip"
+        android:layout_gravity="center_horizontal|bottom"
+        android:background="#AAffffff"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/capture_button_cancel"
+            android:layout_width="70dip"
+            android:layout_height="40dip"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dip"
+            android:text="@string/cancel"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/capture_bottom_hint"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dip"
+            android:paddingRight="20dip"
+            android:text="@string/bottom_hint"
+            android:textColor="#FFFFFF"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+</FrameLayout>
